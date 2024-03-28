@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: currency-exchange
+  cache:
+    type: redis
+    host: localhost
+    port: 6379
+    redis:
+      time-to-live: 60000
+
+converter:
+  exchange-rate-api-host: https://v6.exchangerate-api.com/v6/
+  exchange-rate-api-key: 7f2562fc381e55d56c66f0ec
+  rate-update-interval: PT15M
+  rate-update-retry-interval: PT1M
